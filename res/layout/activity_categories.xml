@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sportguide.categories.Categories"
+    tools:context="com.example.sportguide.Categories"
     android:background="@color/lightgreen">
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,20 +26,20 @@
                 android:text="@string/button_inspiration"
                 android:width="150dp"
                 android:textSize="20dp"
-                android:id="@+id/button"
+                android:id="@+id/inspirationButton"
                 android:background="@drawable/categories"
-                android:onClick="inspiration"/>
+                android:onClick="onInspirationClick"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/button_fitness"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="10dp"
                 android:height="150dp"
                 android:width="160dp"
                 android:textSize="20dp"
-                android:background="@drawable/categories"/>
+                android:background="@drawable/categories"
+                android:onClick="onTrainingClick" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,7 +54,8 @@
                 android:width="150dp"
                 android:textSize="20dp"
                 android:height="150dp"
-                android:background="@drawable/categories"/>
+                android:background="@drawable/categories"
+                android:onClick="onRulesClick" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -65,7 +66,7 @@
                 android:height="150dp"
                 android:textSize="20dp"
                 android:background="@drawable/categories"
-                />
+                android:onClick="onNewsClick" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

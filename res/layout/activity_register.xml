@@ -79,9 +79,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/login_button"
+            android:text="@string/register_button"
             android:textSize="70dp"
             android:background="@drawable/drawable"
-            android:onClick="onLoginClick"/>
+            android:onClick="onRegisterClick"/>
     </LinearLayout>
 </RelativeLayout>

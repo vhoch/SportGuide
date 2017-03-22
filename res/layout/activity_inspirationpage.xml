@@ -12,7 +12,7 @@
     android:background="@color/lightgreen">
 
     <Button
-        android:text="MUSIC"
+        android:text="@string/music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -24,7 +24,7 @@
 
 
     <Button
-        android:text="Button"
+        android:text="@string/videos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button2"

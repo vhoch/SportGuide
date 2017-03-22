@@ -3,12 +3,9 @@ package com.example.sportguide;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import com.example.sportguide.categories.Categories;
 
 public class Register extends AppCompatActivity{
 
@@ -47,7 +44,10 @@ public class Register extends AppCompatActivity{
     * onLoginClick is called after the login button is clicked
     * starting categories activity
     * */
-    public void onLoginClick(View view){
+    public void onRegisterClick(View view){
+        /*
+        * TODO:
+        * Check if credentials are correct*/
         Intent categories = new Intent(this, Categories.class);
         startActivity(categories);
     }

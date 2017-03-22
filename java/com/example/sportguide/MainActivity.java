@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.sportguide.categories.Categories;
-
 public class MainActivity extends AppCompatActivity{
 
     /*
@@ -21,17 +19,8 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button regButton = (Button) findViewById(R.id.registerButton);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-
-        regButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent register = new Intent(MainActivity.this, Register.class);
-                startActivity(register);
-            }
-        });
     }
     /*
     * onClick method - this method is run after
@@ -39,11 +28,15 @@ public class MainActivity extends AppCompatActivity{
      * Starting new activity - register activity
     * */
     public void onLoginClick(View view){
-        Intent intent = new Intent(getApplicationContext(), Categories.class);
+        /*
+        * TODO:
+         * Check if filled name and password are correct
+          * */
+        Intent intent = new Intent(this, Categories.class);
         startActivity(intent);
     }
 
-    public void regClick(View view) {
+    public void onRegisterClick(View view) {
         Intent intent = new Intent(this, Register.class);
         startActivity(intent);
     }

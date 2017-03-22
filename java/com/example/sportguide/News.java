@@ -4,12 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class Inspirationpage extends AppCompatActivity {
+public class News extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inspirationpage);
+        setContentView(R.layout.activity_news);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // creates backward arrow button
     }
 

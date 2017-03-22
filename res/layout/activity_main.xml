@@ -44,6 +44,7 @@ android:background="@color/lightgreen">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_button"
+        android:id="@+id/logButton"
         android:textSize="27dp"
         android:layout_marginLeft="90dp"
         android:width="155dp"
@@ -56,6 +57,6 @@ android:background="@color/lightgreen">
         android:textSize="27dp"
         android:layout_marginLeft="90dp"
         android:width="155dp"
-        android:onClick="regClick" />
+        android:onClick="onRegisterClick" />
 </LinearLayout>
 </RelativeLayout>

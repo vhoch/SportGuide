@@ -4,12 +4,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class Inspirationpage extends AppCompatActivity {
+import com.example.sportguide.R;
+
+public class Cricket extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inspirationpage);
+        setContentView(R.layout.activity_cricket);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // creates backward arrow button
     }
 

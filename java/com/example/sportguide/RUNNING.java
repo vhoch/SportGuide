@@ -2,14 +2,19 @@ package com.example.sportguide;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class Inspirationpage extends AppCompatActivity {
+import com.example.sportguide.R;
+
+public class RUNNING extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inspirationpage);
+        setContentView(R.layout.activity_running);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // creates backward arrow button
     }
 

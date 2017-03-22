@@ -17,12 +17,15 @@
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".Rules" />
-        <activity android:name=".Sports.Football" />
-        <activity android:name=".Sports.Basketball" />
-        <activity android:name=".Sports.VollyBall" />
-        <activity android:name=".Sports.Cricket" />
-        <activity android:name=".Sports.RUNNING" />
-        <activity android:name=".Inspirationpage"></activity>
+        <activity android:name=".Football" />
+        <activity android:name=".Basketball" />
+        <activity android:name=".VollyBall" />
+        <activity android:name=".Cricket" />
+        <activity android:name=".RUNNING" />
+        <activity android:name=".Inspirationpage" />
+        <activity android:name=".Categories" />
+        <activity android:name=".Training" />
+        <activity android:name=".News"></activity>
     </application>
 
 </manifest>
