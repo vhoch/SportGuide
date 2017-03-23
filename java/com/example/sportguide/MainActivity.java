@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -30,10 +32,23 @@ public class MainActivity extends AppCompatActivity{
     public void onLoginClick(View view){
         /*
         * TODO:
-         * Check if filled name and password are correct
+         * Check if filled name and password are in database
           * */
-        Intent intent = new Intent(this, Categories.class);
-        startActivity(intent);
+        EditText name = (EditText) findViewById(R.id.username);
+        EditText pass = (EditText) findViewById(R.id.password);
+
+        /*
+        * Check if EditText is empty
+        * If not then go to another activity
+        * */
+        if (name.getText().toString().equals("")) {
+            Toast.makeText(this, "You did not input username", Toast.LENGTH_SHORT).show();
+        } else if (pass.getText().toString().equals("")) {
+            Toast.makeText(this, "You did not input password", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(this, Categories.class);
+            startActivity(intent);
+        }
     }
 
     public void onRegisterClick(View view) {

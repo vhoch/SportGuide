@@ -18,6 +18,7 @@ public class Categories extends AppCompatActivity {
         setContentView(com.example.sportguide.R.layout.activity_categories);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
     /*
     * Same method like in register activity, calls when creates backward button
     * */

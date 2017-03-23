@@ -32,14 +32,15 @@ android:background="@color/lightgreen">
         android:hint="username"
         android:textAlignment="center"
         android:textSize="27dp"
-        />
+        android:id="@+id/username" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="password"
         android:textAlignment="center"
-        android:textSize="27dp"/>
+        android:textSize="27dp"
+        android:id="@+id/password" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
