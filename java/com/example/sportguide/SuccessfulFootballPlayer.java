@@ -1,18 +1,17 @@
 package com.example.sportguide;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Inspirationpage extends AppCompatActivity {
+public class SuccessfulFootballPlayer extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inspirationpage);
+        setContentView(R.layout.activity_successful_football_player);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // creates backward arrow button
     }
 
@@ -27,16 +26,8 @@ public class Inspirationpage extends AppCompatActivity {
         return super.onOptionsItemSelected(menu);
     }
 
-    public void onMusicClick(View view) {
-        String id = "https://www.youtube.com/watch?v=c_maWh3ONfI";
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube://" + id));
-        startActivity(intent);
-    }
-
-
-    public void onStoriesClick(View view) {
-        Intent intent = new Intent(this, Rules.class);
-        intent.putExtra("flag", "Inspiration");
+    public void onClickMessi(View view) {
+        Intent intent = new Intent(this, LionelMessi.class);
         startActivity(intent);
     }
 }

@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/immagine"
+        android:icon="@drawable/lologo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -25,7 +25,14 @@
         <activity android:name=".Inspirationpage" />
         <activity android:name=".Categories" />
         <activity android:name=".Training" />
-        <activity android:name=".News"></activity>
+        <activity android:name=".News" />
+        <activity android:name=".Stories" />
+        <activity android:name=".SuccessfulFootballPlayer" />
+        <activity android:name=".SuccessfulVolleyballPlayer" />
+        <activity android:name=".SuccessfulCricketPlayer" />
+        <activity android:name=".SuccessfulBasketballPlayer" />
+        <activity android:name=".SuccessfulRunningPlayer" />
+        <activity android:name=".LionelMessi"></activity>
     </application>
 
 </manifest>

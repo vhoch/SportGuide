@@ -27,28 +27,63 @@ public class Rules extends AppCompatActivity {
     }
 
     public void onFootballClick(View view) {
-        Intent intent = new Intent(this, Football.class);
-        startActivity(intent);
+        Intent gettingIntent = getIntent();
+        String checkFlag = gettingIntent.getStringExtra("flag");
+        if (checkFlag.equals("categories")) {
+            Intent intent = new Intent(this, Football.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, SuccessfulFootballPlayer.class);
+            startActivity(intent);
+        }
     }
 
     public void onBasketballClick(View view) {
-        Intent intent = new Intent(this, Basketball.class);
-        startActivity(intent);
+        Intent gettingIntent = getIntent();
+        String checkFlag = gettingIntent.getStringExtra("flag");
+        if (checkFlag.equals("categories")) {
+            Intent intent = new Intent(this, Basketball.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, SuccessfulBasketballPlayer.class);
+            startActivity(intent);
+        }
     }
 
     public void onVolleyballClick(View view) {
-        Intent intent = new Intent(this, VollyBall.class);
-        startActivity(intent);
+        Intent gettingIntent = getIntent();
+        String checkFlag = gettingIntent.getStringExtra("flag");
+        if (checkFlag.equals("categories")) {
+            Intent intent = new Intent(this, VollyBall.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, SuccessfulVolleyballPlayer.class);
+            startActivity(intent);
+        }
     }
 
     public void onCricketClick(View view) {
-        Intent intent = new Intent(this, Cricket.class);
-        startActivity(intent);
+        Intent gettingIntent = getIntent();
+        String checkFlag = gettingIntent.getStringExtra("flag");
+        if (checkFlag.equals("categories")) {
+            Intent intent = new Intent(this, Cricket.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, SuccessfulCricketPlayer.class);
+            startActivity(intent);
+        }
     }
 
     public void onRunningClick(View view) {
-        Intent intent = new Intent(this, RUNNING.class);
-        startActivity(intent);
+        Intent gettingIntent = getIntent();
+        String checkFlag = gettingIntent.getStringExtra("flag");
+        if (checkFlag.equals("categories")) {
+            Intent intent = new Intent(this, RUNNING.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, SuccessfulRunningPlayer.class);
+            startActivity(intent);
+        }
     }
 
 }

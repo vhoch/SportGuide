@@ -41,6 +41,7 @@ public class Categories extends AppCompatActivity {
 
     public void onRulesClick(View view) {
         Intent intent = new Intent(this, Rules.class);
+        intent.putExtra("flag", "categories");
         startActivity(intent);
     }
     // These activities have to be made
